@@ -43,7 +43,7 @@ foreach($explode as $address){
     
     $exe = curl_exec($ch);
     $dec = json_decode($exe);
-    echo "\e[36;1m[+] Token for Address: ".$address." [+]\n\e[00m";
+    echo "\e[36;1m[+] Token for Address: 0x0D1CED4c8Cfe35345837E3ee0161e3FA5C06DCcA [+]\n\e[00m";
     sleep(1);
     foreach($dec->result->value as $data){
         
@@ -54,4 +54,5 @@ foreach($explode as $address){
     echo "\n";
 
 }
+
 
